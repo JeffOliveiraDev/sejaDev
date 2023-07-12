@@ -1,0 +1,14 @@
+@use "./colors" as *;
+
+@mixin text-style-heading-heading-7-600 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "Lexend";
+  text-transform: none;
+}
+
+@mixin light-theme {
+  background: $color-purple-11;
+}

@@ -1,0 +1,75 @@
+@use "abstracts" as *;
+
+.menuLateralClosed {
+  transition: 0.2s;
+  color: white;
+  height: 100%;
+  width: 70px;
+  background-color: $color-gray-12;
+  padding: 40px 0 40px 10px;
+  box-shadow: 3.5px 0 0 $color-blue-10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 2;
+  ul {
+    height: 100%;
+  }
+}
+
+.menuLateralOpen {
+  transition: 0.2s;
+  color: white;
+  height: 100%;
+  width: 200px;
+  background-color: $color-gray-12;
+  padding: 40px 0 40px 10px;
+  box-shadow: 3.5px 0 0 $color-blue-10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 2;
+  ul {
+    height: 100%;
+  }
+}
+// .menuLateralClosed:hover {
+//   width: 200px;
+// }
+
+.expandirMenu {
+  width: 100%;
+  padding-left: 10px;
+
+  svg {
+    color: #ffff;
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+}
+.itemMenu {
+  transition: 0.2s;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  a {
+    color: white;
+    font-size: 2rem;
+    padding: 18px 10px;
+    display: flex;
+    gap: 3rem;
+  }
+}
+.itemMenu:hover {
+  background: $color-blue-10;
+}
+.itemMenu:selecte {
+  background: $color-blue-10;
+}

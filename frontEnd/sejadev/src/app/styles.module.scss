@@ -1,0 +1,19 @@
+@use "abstracts" as *;
+
+.layoutClass {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bodyLight {
+  @include light-theme;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bodyDark {
+  background: $color-blue-10;
+  width: 100vw;
+  height: 100vh;
+}
