@@ -25,6 +25,7 @@
   width: 200px;
   background-color: $color-gray-12;
   padding: 40px 0 40px 10px;
+
   box-shadow: 3.5px 0 0 $color-blue-10;
   position: fixed;
   top: 0;
@@ -35,9 +36,6 @@
     height: 100%;
   }
 }
-// .menuLateralClosed:hover {
-//   width: 200px;
-// }
 
 .expandirMenu {
   width: 100%;
