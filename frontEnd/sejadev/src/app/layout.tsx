@@ -3,6 +3,7 @@ import "../scss/main.scss";
 import styles from "./styles.module.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Footer from "@/components/Footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${styles.layoutClass}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,0 +1,135 @@
+@use "abstracts" as *;
+
+.boxPresentation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(
+    172deg,
+    $color-blue-11 0%,
+    #4020d2 80%,
+    #08d2d2 100%
+  );
+}
+
+.backGroundImage {
+  background-image: url("../../../../assets/backgroundPcTopo.svg");
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.itensPresentation {
+  display: flex;
+  width: 75%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+
+  top: 30%;
+  margin-left: 60%;
+  //   left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  h2,
+  p {
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  span {
+    color: $color-sky-9;
+  }
+}
+.foto {
+  width: 350px;
+  height: 350px;
+}
+
+@media (max-width: 900px) {
+  .itensPresentation {
+    padding-top: 70px;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .btnProjetos {
+    width: 100%;
+  }
+  .foto {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .foto {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.btnProjetos {
+  z-index: 2;
+  width: fit-content;
+  height: 46.8px;
+  margin-top: 2rem;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+
+  background: radial-gradient(
+    100% 100% at 100% 0%,
+    $color-sky-9 0%,
+    $color-blue-11 100%
+  );
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.btnProjetos:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%),
+    inset 0px -0.1em 0px $color-blue-11;
+  transform: translateY(-0.1em);
+}
+
+.btnProjetos:active {
+  box-shadow: inset 0px 0.1em 0.6em $color-blue-11;
+  transform: translateY(0em);
+}
+
+.boxEstudo {
+  width: 100%;
+  height: 100%;
+}
+
+.insideBoxEstudo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.wave {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 12rem;
+  z-index: 1;
+}

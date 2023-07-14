@@ -1,0 +1,123 @@
+@use "abstracts" as *;
+
+.moreAboutMe {
+  background: $color-blue-2;
+
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  padding-bottom: 20px;
+}
+.insideMoreAboutMe {
+  margin-left: 205px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  gap: 6rem;
+  h2 {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 3.2rem;
+  }
+  p {
+    // text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 800px;
+    margin-right: 70px;
+  }
+  span {
+    color: $color-blue-10;
+  }
+  .imgInsideMoreAboutMe {
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-self: center;
+    img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+  .iconsContact {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 15px;
+
+    a {
+      color: $color-blue-dark-9;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    a:hover {
+      color: $color-blue-12;
+      border-color: $color-blue-12;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .insideMoreAboutMe {
+    // margin-left: 203px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 960px) {
+  .moreAboutMe {
+    margin-top: -5%;
+  }
+}
+
+@media (max-width: 697px) {
+  .moreAboutMe {
+    margin-top: -10%;
+  }
+}
+@media (max-width: 536px) {
+  .moreAboutMe {
+    margin-top: -12%;
+  }
+}
+
+// @media (max-width: 697px) {
+//   //   .insideMoreAboutMe {
+//   //     padding-top: 0px;
+//   //   }
+//   .moreAboutMe {
+//     margin-top: -12%;
+//     padding-top: 40px;
+//   }
+// }
+
+.insideMoreAboutMe {
+  margin-left: 205px;
+}
+@media (max-width: 510px) {
+  .insideMoreAboutMe {
+    margin-left: 150px;
+  }
+  .moreAboutMe {
+    margin-top: -15%;
+  }
+}
+@media (max-width: 451px) {
+  .moreAboutMe {
+    margin-top: -16%;
+  }
+  .insideMoreAboutMe {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 348px) {
+  .moreAboutMe {
+    margin-top: -15%;
+  }
+}
