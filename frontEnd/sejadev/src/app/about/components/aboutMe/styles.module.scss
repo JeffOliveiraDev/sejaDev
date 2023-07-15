@@ -37,9 +37,16 @@
     z-index: 2;
     display: flex;
     align-self: center;
+
     img {
       width: 80%;
       height: 80%;
+    }
+    img:hover {
+      transition: all 2s;
+      // transition: 10s;
+      transform: scale(1.2);
+      // // transform: rotate3d(360deg);
     }
   }
   .iconsContact {
@@ -71,18 +78,18 @@
 
 @media (max-width: 960px) {
   .moreAboutMe {
-    margin-top: -5%;
+    // margin-top: -5%;
   }
 }
 
 @media (max-width: 697px) {
   .moreAboutMe {
-    margin-top: -10%;
+    // margin-top: -10%;
   }
 }
 @media (max-width: 536px) {
   .moreAboutMe {
-    margin-top: -12%;
+    // margin-top: -12%;
   }
 }
 
@@ -104,12 +111,12 @@
     margin-left: 150px;
   }
   .moreAboutMe {
-    margin-top: -15%;
+    // margin-top: -15%;
   }
 }
 @media (max-width: 451px) {
   .moreAboutMe {
-    margin-top: -16%;
+    // margin-top: -16%;
   }
   .insideMoreAboutMe {
     margin-left: 100px;
@@ -118,6 +125,6 @@
 
 @media (max-width: 348px) {
   .moreAboutMe {
-    margin-top: -15%;
+    // margin-top: -15%;
   }
 }

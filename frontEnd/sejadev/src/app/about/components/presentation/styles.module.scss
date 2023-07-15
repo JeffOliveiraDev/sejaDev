@@ -75,6 +75,12 @@
   }
 }
 
+@media (max-width: 350px) {
+  .itensPresentation {
+    margin-left: 63%;
+  }
+}
+
 .btnProjetos {
   z-index: 2;
   width: fit-content;
@@ -130,6 +136,23 @@
   width: 100%;
   position: absolute;
   height: 100%;
-  top: 12rem;
-  z-index: 1;
+  top: 10rem;
+  // z-index: 2;
+}
+@media (max-width: 841px) {
+  .wave {
+    top: 13rem;
+  }
+}
+
+@media (max-width: 618px) {
+  .wave {
+    top: 15rem;
+  }
+}
+
+@media (max-width: 448px) {
+  .wave {
+    top: 17rem;
+  }
 }
