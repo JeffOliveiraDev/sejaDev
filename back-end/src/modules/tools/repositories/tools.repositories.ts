@@ -1,6 +1,6 @@
 import { CreateToolDto } from '../dto/create-tool.dto';
-import { UpdateToolDto } from '../dto/update-Tool.dto';
-import { Tool } from '../entities/Tool.entity';
+import { UpdateToolDto } from '../dto/update-tool.dto';
+import { Tool } from '../entities/tool.entity';
 
 export abstract class ToolsRepository {
   abstract create(data: CreateToolDto): Promise<Tool> | Tool;

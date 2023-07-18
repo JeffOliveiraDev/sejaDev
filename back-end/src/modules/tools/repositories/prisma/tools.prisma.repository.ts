@@ -4,7 +4,7 @@ import { PrismaService } from 'src/database/prisma.service';
 import { CreateToolDto } from '../../dto/create-tool.dto';
 import { ToolsRepository } from '../tools.repositories';
 
-import { Tool } from '../../entities/Tool.entity';
+import { Tool } from '../../entities/tool.entity';
 import { UpdateToolDto } from '../../dto/update-tool.dto';
 
 @Injectable()

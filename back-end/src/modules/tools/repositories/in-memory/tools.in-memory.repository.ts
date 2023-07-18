@@ -1,6 +1,6 @@
 import { CreateToolDto } from '../../dto/create-tool.dto';
 import { UpdateToolDto } from '../../dto/update-tool.dto';
-import { Tool } from '../../entities/Tool.entity';
+import { Tool } from '../../entities/tool.entity';
 import { ToolsRepository } from '../tools.repositories';
 
 export class ToolsInMemoryRepository implements ToolsRepository {

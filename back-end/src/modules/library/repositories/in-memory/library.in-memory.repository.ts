@@ -1,7 +1,7 @@
-import { CreateLibraryDto } from '../../dto/create-Library.dto';
-import { UpdateLibraryDto } from '../../dto/update-Library.dto';
-import { Library } from '../../entities/Library.entity';
-import { LibraryRepository } from '../Library.repository';
+import { CreateLibraryDto } from '../../dto/create-library.dto';
+import { UpdateLibraryDto } from '../../dto/update-library.dto';
+import { Library } from '../../entities/library.entity';
+import { LibraryRepository } from '../library.repository';
 
 export class LibraryInMemoryRepository implements LibraryRepository {
   private database: Library[] = [];

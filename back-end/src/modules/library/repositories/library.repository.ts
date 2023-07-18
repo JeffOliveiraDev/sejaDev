@@ -1,6 +1,6 @@
-import { CreateLibraryDto } from '../dto/create-Library.dto';
-import { UpdateLibraryDto } from '../dto/update-Library.dto';
-import { Library } from '../entities/Library.entity';
+import { CreateLibraryDto } from '../dto/create-library.dto';
+import { UpdateLibraryDto } from '../dto/update-library.dto';
+import { Library } from '../entities/library.entity';
 
 export abstract class LibraryRepository {
   abstract create(data: CreateLibraryDto): Promise<Library> | Library;
