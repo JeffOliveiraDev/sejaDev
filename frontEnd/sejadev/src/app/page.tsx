@@ -32,7 +32,7 @@ export default function Home() {
     <main className={styles.main}>
       <HeaderHome />
       <BtnsLanguages />
-      <section className={styles.boxInfo}>
+      <section className={styles.boxInfonp}>
         <InsideBoxInfo />
         <div className={styles.boxCards}>
           <h2 className={styles.boxCardsTitle}>Frameworks</h2>
