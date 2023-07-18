@@ -20,17 +20,23 @@ export class ItemPrismaRepository implements ItemRepository {
   }
   async findAll(): Promise<Item[]> {
     const items = await this.prisma.item.findMany({
-      include: { Framework: true },
+      include: { Framework: true, Library: true, Tool: true },
     });
 
     return items;
   }
   async findOne(id: string): Promise<Item> {
-    const item = await this.prisma.item.findUnique({ where: { id } });
+    const item = await this.prisma.item.findUnique({
+      where: { id },
+      include: { Framework: true, Library: true, Tool: true },
+    });
     return item;
   }
   async findOneByName(name: string): Promise<Item> {
-    const item = await this.prisma.item.findUnique({ where: { name } });
+    const item = await this.prisma.item.findUnique({
+      where: { name },
+      include: { Framework: true, Library: true, Tool: true },
+    });
     return item;
   }
   async update(id: string, data: UpdateItemDto): Promise<Item> {

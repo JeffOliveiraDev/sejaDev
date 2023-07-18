@@ -6,7 +6,7 @@ export class Tool {
   name: string;
   description: string;
   documentation: string;
-  item_id?: string;
+  itemId?: string;
 
   constructor() {
     this.id = randomUUID();

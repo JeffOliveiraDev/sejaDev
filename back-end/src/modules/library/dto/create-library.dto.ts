@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString } from 'class-validator';
+import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
 export class CreateLibraryDto {
   @IsString()
@@ -16,4 +16,8 @@ export class CreateLibraryDto {
   @IsString()
   @IsNotEmpty()
   documentation: string;
+
+  @IsString()
+  @IsOptional()
+  itemId: string;
 }

@@ -1,4 +1,4 @@
-import { IsString, IsNotEmpty } from 'class-validator';
+import { IsString, IsNotEmpty, IsOptional } from 'class-validator';
 
 export class CreateToolDto {
   @IsString()
@@ -16,4 +16,8 @@ export class CreateToolDto {
   @IsString()
   @IsNotEmpty()
   documentation: string;
+
+  @IsString()
+  @IsOptional()
+  itemId: string;
 }

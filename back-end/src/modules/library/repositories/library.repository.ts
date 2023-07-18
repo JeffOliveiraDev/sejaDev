@@ -4,7 +4,8 @@ import { Library } from '../entities/Library.entity';
 
 export abstract class LibraryRepository {
   abstract create(data: CreateLibraryDto): Promise<Library> | Library;
-  abstract findAll(): Promise<Library> | Library[];
+
+  abstract findAll(): Promise<object | Library[]>;
   abstract findOne(id: string): Promise<Library> | Library;
   abstract update(
     id: string,

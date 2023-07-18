@@ -16,8 +16,10 @@ export class LibraryInMemoryRepository implements LibraryRepository {
     return newLibrary;
   }
 
-  findAll(): Promise<Library> | Library[] {
-    return this.database;
+  async findAll(): Promise<object | Library[]> {
+    const librarys = await this.findAll();
+
+    return librarys;
   }
   findOne(id: string): Library | Promise<Library> {
     const library = this.database.find((library) => library.id === id);
