@@ -31,17 +31,7 @@ const BtnsLanguages = () => {
             <p className={styles.textTitle}>Python</p>
           </div>
         </li>
-        {/* <li
-          className={styles.card}
-          onClick={() => setSelectedItem("SASS/SCSS")}
-        >
-          <div className={styles.cardImage}>
-            <Image src={sass} alt="Sass/Scss" />
-          </div>
-          <div className={styles.cardDescription}>
-            <p className={styles.textTitle}>SASS/SCSS</p>
-          </div>
-        </li> */}
+
         <li
           className={styles.card}
           onClick={() => setSelectedItem("JavaScript")}
@@ -53,14 +43,7 @@ const BtnsLanguages = () => {
             <p className={styles.textTitle}>JavaScript</p>
           </div>
         </li>
-        {/* <li className={styles.card} onClick={() => setSelectedItem("React")}>
-          <div className={styles.cardImage}>
-            <Image src={react} alt="React" />
-          </div>
-          <div className={styles.cardDescription}>
-            <p className={styles.textTitle}>React</p>
-          </div>
-        </li> */}
+
         <li className={styles.card} onClick={() => setSelectedItem("HTML")}>
           <div className={styles.cardImage}>
             <Image src={html} alt="Html" />

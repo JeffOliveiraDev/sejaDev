@@ -14,10 +14,11 @@
   font-weight: bolder;
   color: black;
   margin-left: 100px;
-  width: 80%;
+
   max-width: 800px;
   height: fit-content;
   padding: 20px;
+  margin-right: 30px;
 
   gap: 2rem;
 }
@@ -116,5 +117,11 @@
   button:active {
     box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
     transform: translateY(0em);
+  }
+}
+@media (max-width: 355px) {
+  .btnsAbout {
+    align-items: center;
+    flex-direction: column;
   }
 }
