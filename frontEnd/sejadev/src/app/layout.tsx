@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer/footer";
+import { Provider } from "@/context/itemsContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${inter.className} ${styles.layoutClass}`}>
         <Header />
-        {children}
+        <Provider>{children}</Provider>
         <Footer />
       </body>
     </html>

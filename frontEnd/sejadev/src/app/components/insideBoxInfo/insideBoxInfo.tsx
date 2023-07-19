@@ -1,28 +1,35 @@
-import React from "react";
-
+"use client";
+import React, { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import html from "../../../assets/html5.svg";
 import { FcAbout, FcInfo, FcViewDetails } from "react-icons/fc";
+import { Context } from "@/context/itemsContext";
+import Loading from "@/app/loading";
 
 const InsideBoxInfo = () => {
+  const { items, selectedItem, setSelectedItem, loading } = useContext(Context);
+
+  const itemToRender = items.find(
+    (item: { name: string }) => item.name === selectedItem
+  );
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <div className={styles.insideBoxInfo}>
       <div className={styles.aboutTitle}>
-        <Image src={html} alt="html"></Image>
-        <h2>HTML</h2>
+        {/* <Image src={html} alt="html"></Image> */}
+        <h2>{itemToRender ? itemToRender.name : null}</h2>
       </div>
       <div className={styles.about}>
         <FcInfo />
-        <h3>Tipo:</h3>
+        <h3>Tipo: {itemToRender ? itemToRender.type : null}</h3>
       </div>
       <div className={styles.about}>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          impedit pariatur ducimus quibusdam neque soluta porro libero explicabo
-          suscipit iusto dolor corrupti, consequatur beatae odio temporibus
-          rerum magni! Perspiciatis, minus!
-        </p>
+        {/* <p>{itemToRender.description}</p> */}
       </div>
 
       <div className={styles.about}>
@@ -31,22 +38,18 @@ const InsideBoxInfo = () => {
       </div>
       <div className={styles.about}>
         {/* <FcAbout /> */}
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          impedit pariatur ducimus quibusdam neque soluta porro libero explicabo
-          suscipit iusto dolor corrupti, consequatur beatae odio temporibus
-          rerum magni! Perspiciatis, minus!
-        </p>
+        <p>{itemToRender ? itemToRender.description : null}</p>
       </div>
       <div className={styles.btnsAbout}>
         <a
           target="_blank"
-          href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+          href={itemToRender ? itemToRender.documentation : null}
         >
           <button>Documentação</button>
         </a>
-
-        <button>Canal Recomendado</button>
+        <a target="_blank" href={itemToRender ? itemToRender.video : null}>
+          <button>Canal Recomendado</button>
+        </a>
       </div>
     </div>
   );

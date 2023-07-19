@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "link",
-  timeout: 5000,
+  baseURL: "https://sejadev-backend.onrender.com",
+  timeout: 10000,
 });

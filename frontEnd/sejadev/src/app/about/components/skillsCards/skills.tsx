@@ -68,7 +68,7 @@ const CardsSkills = () => {
               <Image src={html} alt="Html" />
             </div>
             <div className={styles.cardDescription}>
-              <p className={styles.textTitle}>Html</p>
+              <p className={styles.textTitle}>HTML</p>
             </div>
           </li>
           <li className={styles.card}>
@@ -111,7 +111,7 @@ const CardsSkills = () => {
               <Image src={postgre} alt="postgreSQL" />
             </div>
             <div className={styles.cardDescription}>
-              <p className={styles.textTitle}>NodeJS</p>
+              <p className={styles.textTitle}>PostgreSQL</p>
             </div>
           </li>
           <li className={styles.card}>

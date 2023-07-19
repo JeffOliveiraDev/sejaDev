@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 import { api } from "@/services/api";
 import { BtnTeste } from "@/components/ButtonTeste";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import wavesTop from "../assets/waveTopClara.svg";
 
 import burguer from "../assets/burguerkenzie.png";
@@ -14,9 +14,10 @@ import logo from "../assets/9.svg";
 import HeaderHome from "./components/headerHome/headerHome";
 import BtnsLanguages from "./components/btnsLanguages/btnsLanguages";
 import InsideBoxInfo from "./components/insideBoxInfo/insideBoxInfo";
+import { Context } from "@/context/itemsContext";
+import BoxCards from "./components/boxCards/boxCards";
 
 export default function Home() {
-  // const response = await api.get("rota");
   // requisição do lado do servidor(SSR)
   // requisição do lado do cliente(CSR),useEffect, "use client"
   // CSR é quando o usuário precisa interagir
@@ -34,62 +35,7 @@ export default function Home() {
       <BtnsLanguages />
       <section className={styles.boxInfo}>
         <InsideBoxInfo />
-        <div className={styles.boxCards}>
-          <h2 className={styles.boxCardsTitle}>Frameworks</h2>
-          <ul className={styles.listCards}>
-            <li className={styles.card}>
-              <h2></h2>
-              <Image src={burguer} alt="burguer" />
-              <div className={styles.cardTextBtn}>
-                <h3>Kenzie Burguer</h3>
-                <p>
-                  Projeto da Kenzie Burguer, refeito com TypeScript e
-                  refatorado, esse projeto emula uma loja de hambúrgueres com
-                  página de cadastro e login, utilizando API.
-                </p>
-              </div>
-              <button>Visitar</button>
-            </li>
-          </ul>
-        </div>
-
-        <div className={styles.boxCards}>
-          <h2 className={styles.boxCardsTitle}>Bibliotecas</h2>
-          <ul className={styles.listCards}>
-            <li className={styles.card}>
-              <h2></h2>
-              <Image src={burguer} alt="burguer" />
-              <div className={styles.cardTextBtn}>
-                <h3>Kenzie Burguer</h3>
-                <p>
-                  Projeto da Kenzie Burguer, refeito com TypeScript e
-                  refatorado, esse projeto emula uma loja de hambúrgueres com
-                  página de cadastro e login, utilizando API.
-                </p>
-              </div>
-              <button>Visitar</button>
-            </li>
-          </ul>
-        </div>
-
-        <div className={styles.boxCards}>
-          <h2 className={styles.boxCardsTitle}>Ferramentas</h2>
-          <ul className={styles.listCards}>
-            <li className={styles.card}>
-              <h2></h2>
-              <Image src={burguer} alt="burguer" />
-              <div className={styles.cardTextBtn}>
-                <h3>Kenzie Burguer</h3>
-                <p>
-                  Projeto da Kenzie Burguer, refeito com TypeScript e
-                  refatorado, esse projeto emula uma loja de hambúrgueres com
-                  página de cadastro e login, utilizando API.
-                </p>
-              </div>
-              <button>Visitar</button>
-            </li>
-          </ul>
-        </div>
+        <BoxCards />
       </section>
     </main>
   );
