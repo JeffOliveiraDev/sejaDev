@@ -14,6 +14,7 @@ interface ProjectInterface {
 }
 
 const CardsProjects = () => {
+  
   const projectsRef = useRef(null);
   const [observed, setObserved] = useState(false);
   const [selectedProjects, setDelectedProjects] = useState("Todos");

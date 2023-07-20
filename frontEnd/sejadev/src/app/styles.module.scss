@@ -5,14 +5,10 @@
   flex-direction: column;
   width: 100%;
   &::-webkit-scrollbar {
-    width: 15px; /* Largura da barra de rolagem */
+    width: 15px;
   }
 
   &::-webkit-scrollbar-thumb {
-    // background-color: $color-blue-11; /* Cor do polegar da barra de rolagem */
-    // border-radius: 15px; /* Raio de borda do polegar da barra de rolagem */
-    // box-shadow: inset 2px 2px 2px $color-blue-9,
-    //   inset -2px -2px 2px $color-blue-12;
     background: radial-gradient(
       100% 100% at 100% 0%,
       $color-sky-9 0%,
@@ -31,7 +27,6 @@
       $color-blue-11 0,
       $color-blue-9
     );
-    // background-color: $color-blue-10; /* Cor do fundo da barra de rolagem */
   }
 }
 
@@ -115,7 +110,7 @@
     gap: 0.5rem;
     display: flex;
     align-items: center;
-    // border-top: 2px solid $color-blue-2;
+
     svg {
       width: 30px;
       height: 30px;
@@ -184,7 +179,6 @@
     }
   }
 }
-
 
 // loading
 .dotsContainer {

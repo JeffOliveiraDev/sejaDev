@@ -3,10 +3,13 @@ import styles from "./styles.module.scss";
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import imgEstudo from "../../../../assets/formation.svg";
 import Image from "next/image";
+import wavesTop from "../../../../assets/waveTopClara.svg";
 
 const MoreAboutMe = () => {
   return (
     <div className={styles.moreAboutMe}>
+      <Image className={styles.wave} src={wavesTop} alt="" />
+
       <div className={styles.insideMoreAboutMe}>
         <div className={styles.imgInsideMoreAboutMe}>
           <Image src={imgEstudo} alt="" />
