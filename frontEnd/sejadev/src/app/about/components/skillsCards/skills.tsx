@@ -23,7 +23,7 @@ import github from "../../../../assets/github.svg";
 
 const CardsSkills = () => {
   return (
-    <div className={styles.boxSkills}>
+    <div id="hardSkills" className={styles.boxSkills}>
       <div className={styles.insideBoxSkills}>
         <h2>
           Minhas <span>Habilidades</span>

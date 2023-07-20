@@ -67,13 +67,14 @@
   }
   h3 {
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 500;
   }
   p {
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-    font-size: 1.2rem;
-    font-weight: 400;
+    // text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
   }
 }
 .btnsAbout {
@@ -86,7 +87,9 @@
     height: 30px;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+
     display: flex;
     outline: 0;
     border: 0;

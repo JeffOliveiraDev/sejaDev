@@ -9,7 +9,6 @@ const MoreAboutMe = () => {
   return (
     <div className={styles.moreAboutMe}>
       <Image className={styles.wave} src={wavesTop} alt="" />
-
       <div className={styles.insideMoreAboutMe}>
         <div className={styles.imgInsideMoreAboutMe}>
           <Image src={imgEstudo} alt="" />
@@ -23,7 +22,8 @@ const MoreAboutMe = () => {
             administração por dez anos em uma{" "}
             <span>Unidade de Saúde da Família</span>, estou em{" "}
             <span>transição de carreira</span>, me voltando para a área que
-            sempre gostei que é a TI! Veja minhas HardSkills!
+            sempre gostei que é a TI!{" "}
+            <a href="#hardSkills">Veja minhas HardSkills</a>!
           </p>
 
           <p>

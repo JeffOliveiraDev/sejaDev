@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "./styles.module.scss";
+
 import { api } from "@/services/api";
 
 const Page = () => {
@@ -17,7 +17,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className={styles.teste}>
+    <div>
       <li>asdfsadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</li>
     </div>
   );
