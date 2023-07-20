@@ -25,10 +25,10 @@
     font-weight: bolder;
     color: black;
     margin-left: 100px;
-    width: 80%;
+
     max-width: 800px;
-    height: -moz-fit-content;
-    height: fit-content;
+    max-height: 65px;
+    margin-right: 5%;
     padding: 10px;
     gap: 2rem;
   }
@@ -42,15 +42,15 @@
   display: flex;
   width: fit-content;
   height: 100%;
-  margin-right: 70px;
+  margin-right: 30px;
   // background-color: grey;
   gap: 4rem;
   flex-wrap: wrap;
 
   .card {
     box-sizing: border-box;
-    width: 300px;
-    height: 433px;
+    max-width: 300px;
+    max-height: fit-content;
 
     background: $color-blue-1;
     border: 1px solid white;

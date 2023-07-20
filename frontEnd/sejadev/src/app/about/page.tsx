@@ -18,11 +18,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-
-{
-  /* <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body> */
-}

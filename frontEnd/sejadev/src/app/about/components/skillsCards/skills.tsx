@@ -24,7 +24,6 @@ import github from "../../../../assets/github.svg";
 const CardsSkills = () => {
   return (
     <div className={styles.boxSkills}>
-      {/* <Image className={styles.waveSkills} src={wavesBottom} alt="" /> */}
       <div className={styles.insideBoxSkills}>
         <h2>
           Minhas <span>Habilidades</span>
@@ -182,20 +181,6 @@ const CardsSkills = () => {
             </div>
           </li>
         </ul>
-        {/* <ul className={styles.listCards}>
-          <li className={styles.card}>
-            <Image src={burguer} alt="burguer" />
-            <div className={styles.cardTextBtn}>
-              <h3>Kenzie Burguer</h3>
-              <p>
-                Projeto da Kenzie Burguer, refeito com TypeScript e refatorado,
-                esse projeto emula uma loja de hambúrgueres com página de
-                cadastro e login, utilizando API.
-              </p>
-            </div>
-            <button>Visitar</button>
-          </li> */}
-        {/* </ul> */}
       </div>
     </div>
   );

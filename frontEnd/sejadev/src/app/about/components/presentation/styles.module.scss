@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 650px;
   width: 100%;
   background-image: linear-gradient(
     172deg,
@@ -24,22 +24,19 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: absolute;
 }
 
 .itensPresentation {
   display: flex;
-  width: 75%;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 2rem;
-  position: absolute;
 
-  top: 30%;
-  margin-left: 60%;
-  //   left: 60%;
-  transform: translate(-50%, -50%);
   z-index: 2;
   h2,
   p {
@@ -48,36 +45,28 @@
   span {
     color: $color-sky-9;
   }
-}
-.foto {
-  width: 350px;
-  height: 350px;
-}
-
-@media (max-width: 900px) {
-  .itensPresentation {
-    padding-top: 70px;
-    margin-top: 2rem;
+  .itensPresentationLeft {
+    width: fit-content;
+    height: 50%;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
   }
-  .btnProjetos {
-    width: 100%;
-  }
-  .foto {
-    margin-top: -30px;
-  }
-}
-
-@media (max-width: 450px) {
-  .foto {
-    width: 100%;
-    height: 100%;
+  .itensPresentationRight {
+    .foto {
+      max-width: 350px;
+      max-height: 350px;
+    }
   }
 }
-
-@media (max-width: 350px) {
+@media (max-width: 345px) {
   .itensPresentation {
-    margin-left: 63%;
+    .itensPresentationRight {
+      .foto {
+        max-width: 250px;
+        max-height: 250px;
+      }
+    }
   }
 }
 
@@ -122,37 +111,17 @@
   transform: translateY(0em);
 }
 
-.boxEstudo {
-  width: 100%;
-  height: 100%;
-}
-
-.insideBoxEstudo {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.wave {
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  top: 10rem;
-  // z-index: 2;
-}
-@media (max-width: 841px) {
-  .wave {
-    top: 13rem;
+@media (max-width: 475px) {
+  .itensPresentationLeft {
+    padding-left: 80px;
+  }
+  .btnProjetos {
+    padding: 0 1em;
   }
 }
 
-@media (max-width: 618px) {
-  .wave {
-    top: 15rem;
-  }
-}
-
-@media (max-width: 448px) {
-  .wave {
-    top: 17rem;
+@media (max-width: 836px) {
+  .itensPresentation {
+    flex-direction: column;
   }
 }

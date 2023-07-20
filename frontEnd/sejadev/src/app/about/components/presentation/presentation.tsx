@@ -9,26 +9,23 @@ const Presentation = () => {
     <>
       <div id="top" className={styles.boxPresentation}>
         <div className={styles.backGroundImage}></div>
-      </div>
-      <div className={styles.itensPresentation}>
-        <div>
-          <h2>Hello there! Me chamo</h2>
-          <h2>
-            <span>Jefferson.</span>
-          </h2>
-          <p>Desenvolvedor FullStack, psicólogo</p>
-          <p>e entusiasta de Inteligência Artificial!</p>
-          <a href="#projects" className={styles.btnProjetos}>
-            Veja Meus Projetos
-          </a>
+        <div className={styles.itensPresentation}>
+          <div className={styles.itensPresentationLeft}>
+            <h2>Hello there! Me chamo</h2>
+            <h2>
+              <span>Jefferson.</span>
+            </h2>
+            <p>Desenvolvedor FullStack, psicólogo</p>
+            <p>e entusiasta de Inteligência Artificial!</p>
+            <a href="#projects" className={styles.btnProjetos}>
+              Veja Meus Projetos
+            </a>
+          </div>
+          <div className={styles.itensPresentationRight}>
+            <Image className={styles.foto} src={fotoPerfil} alt="" />
+          </div>
         </div>
-
-        <Image className={styles.foto} src={fotoPerfil} alt="" />
       </div>
-      <section className={styles.boxEstudo}>
-        <Image className={styles.wave} src={wavesTop} alt="" />
-        <div className={styles.insideBoxEstudo}></div>
-      </section>
     </>
   );
 };
