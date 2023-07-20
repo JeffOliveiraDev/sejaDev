@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import estudante from "../../../assets/dev3dSentado.svg";
+import estudante from "../../../assets/dev3dSentadoComprimido.svg";
 
 const HeaderHome = () => {
   return (
