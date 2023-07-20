@@ -21,7 +21,6 @@ const InsideBoxInfo = () => {
   return (
     <div className={styles.insideBoxInfo}>
       <div className={styles.aboutTitle}>
-        {/* <Image src={html} alt="html"></Image> */}
         <h2>{itemToRender ? itemToRender.name : null}</h2>
       </div>
       <div className={styles.about}>
