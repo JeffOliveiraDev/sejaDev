@@ -6,6 +6,7 @@ Psicólogo e desenvolvedor Full Stack, estudando NextJs, NestJs, Pyhton e Machin
 
 Meu portfólio pessoal, criado com o intuito de falar um pouco sobre mim e mostrar meus projetos.
 
+### Acesse: https://seja-dev.vercel.app/about
 
 ## Home de Linguagens
 
