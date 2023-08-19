@@ -17,11 +17,6 @@ Página criada para ajudar devs iniciantes e experientes, contém uma lista de l
 **Back-end:** Node, Prisma, NestJS
 
 
-## Apêndice
-
-Coloque qualquer informação adicional aqui
-
-
 ## Autores
 
 - [@Jeff_oDev](https://github.com/JeffOliveiraDev)
